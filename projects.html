@@ -1,39 +1,61 @@
-<!-- projects.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Nandha Shriram</title>
+  <title>Projects | Data Analyst Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="projects">
+
   <header>
-    <h1>Projects</h1>
     <nav>
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
-      <a href="projects.html">Projects</a> |
-      <a href="contact.html">Contact</a>
+      <div class="logo">Nandha Shriram | Data Analyst</div>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="about.html#about">About Me</a></li>
+        <li><a href="projects.html#projects">Projects</a></li>
+        <li><a href="contact.html#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-btn">🌞</button>
     </nav>
   </header>
-  <section id="projects">
-    <h2>Portfolio Highlights</h2>
-    <div class="project">
-      <h3>Retail Sales Dashboard</h3>
-      <p>Built a Power BI dashboard to visualize regional sales trends and KPIs.</p>
+
+  <section class="projects" id="projects">
+    <h1>My Projects</h1>
+
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="sql">SQL</button>
+      <button class="filter-btn" data-category="python">Python</button>
+      <button class="filter-btn" data-category="dashboard">Dashboard</button>
     </div>
-    <div class="project">
-      <h3>Customer Churn Prediction</h3>
-      <p>Developed a predictive model using Python to identify churn patterns in telecom customers.</p>
-    </div>
-    <div class="project">
-      <h3>Survey Analysis with Excel</h3>
-      <p>Analyzed feedback from over 500 survey responses to derive actionable insights.</p>
+
+    <div class="project-list">
+      <div class="project-item" data-category="dashboard">
+        <h2>Sales Dashboard</h2>
+        <p>Interactive Tableau dashboard revealing sales KPIs and insights.</p>
+      </div>
+      <div class="project-item" data-category="python">
+        <h2>Customer Churn Prediction</h2>
+        <p>Machine learning model predicting customer churn for a telecom company.</p>
+      </div>
+      <div class="project-item" data-category="sql">
+        <h2>Claims Fraud Detection</h2>
+        <p>SQL-based analysis of fraudulent healthcare claims patterns.</p>
+      </div>
+      <div class="project-item" data-category="dashboard">
+        <h2>Marketing Campaign ROI</h2>
+        <p>Campaign analytics boosting ROI through data insights.</p>
+      </div>
     </div>
   </section>
+
   <footer>
-    <p>© 2025 Nandha Shriram</p>
+    <p>© 2025 Nandha Shriram Sabbina. All Rights Reserved.</p>
   </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
