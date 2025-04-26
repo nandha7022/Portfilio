@@ -1,6 +1,6 @@
 // Typing Animation
 var typed = new Typed('#typed', {
-    strings: ['Data Analyst', 'Storyteller through Data', 'Business Intelligence Enthusiast', 'SQL | Python | Tableau Expert'],
+    strings: ['Data Analyst', 'Storyteller through Data', 'SQL | Python | Power BI Expert'],
     typeSpeed: 70,
     backSpeed: 40,
     backDelay: 1500,
