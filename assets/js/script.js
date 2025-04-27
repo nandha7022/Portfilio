@@ -1,12 +1,13 @@
 // Typing Animation
-var typed = new Typed('#typed', {
-    strings: ['Data Analyst', 'Storyteller through Data', 'SQL | Python | Power BI Expert'],
-    typeSpeed: 70,
-    backSpeed: 40,
-    backDelay: 1500,
-    loop: true
-  });
-  
+var typed = new Typed("#typed", {
+  strings: ["Data Analyst", "SQL Enthusiast", "Python Programmer"],
+  typeSpeed: 50,
+  backSpeed: 25,
+  backDelay: 1500,
+  loop: true,
+  showCursor: false
+});
+
   // Particles.js Init (only for index.html)
   if (document.getElementById('particles-js')) {
     particlesJS('particles-js', {
@@ -66,4 +67,14 @@ var typed = new Typed('#typed', {
       themeToggle.textContent = "🌞";
     }
   });
+
+  // Smooth Scroll for nav-links
+document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
   

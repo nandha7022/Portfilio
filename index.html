@@ -3,51 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Analyst Portfolio | Home</title>
+  <title>Nandha Shriram | Data Analyst</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
-<body id="home">
+<body>
 
-  <!-- Preloader -->
-  <div id="preloader">
-    <div class="loader"></div>
-  </div>
-
+  <!-- Navbar -->
   <header>
     <nav>
-      <div class="logo">Nandha Shriram | Data Analyst</div>
+      <div class="logo">Nandha Shriram Sabbina</div>
       <ul class="nav-links">
-        <li><a href="index.html#home">Home</a></li>
-        <li><a href="about.html#about">About Me</a></li>
-        <li><a href="projects.html#projects">Projects</a></li>
-        <li><a href="contact.html#contact">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
       </ul>
-      <button id="theme-toggle" class="theme-btn">🌞</button>
     </nav>
   </header>
 
-  <!-- Particle background -->
+  <!-- Particles Background -->
   <div id="particles-js"></div>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <h1>Hi, I'm Nandha Shriram Sabbina</h1>
+  <section class="hero" id="home">
+    <h1>Hi, I'm Nandha</h1>
     <p><span id="typed"></span></p>
-    <a href="projects.html#projects" class="btn">View My Work</a>
-    <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
 
-    <div class="scroll-down">
-      <a href="about.html#about"><span></span></a>
+    <!-- Resume Button -->
+    <div class="resume-button">
+      <a href="assets/resume.pdf" download class="btn">Resume</a>
+      <a href="assets/resume.pdf" download class="btn">CV</a>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/yourlinkedin" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/yourgithub" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+      </a>
+      <a href="mailto:youremail@example.com" target="_blank">
+        <img class="email-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email">
+      </a>
+    </div>    
+  </section>
+
+  <!-- About Section -->
+<section class="about" id="about">
+  <h1>My Story</h1>
+
+  <div class="about-image">
+    <img src="assets/images/profile.jpg" alt="Profile Picture">
+  </div>
+
+  <p>
+    I am a data enthusiast with a strong foundation in SQL, Python, Excel, Tableau, and Power BI, passionate about transforming raw data into meaningful business insights. Through academic projects and hands-on experience, I have built interactive dashboards, developed predictive models, and worked with real-world datasets to drive strategic decision-making. I enjoy applying data storytelling and visualization techniques to uncover patterns and deliver actionable recommendations. Continuously expanding my skills in Data Science, Machine Learning, and Big Data technologies, I am eager to contribute to dynamic projects where innovation, analytics, and problem-solving come together to create real-world impact.
+  </p>
+</section>
+
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h1>My Projects</h1>
+    <div class="project-list">
+      <div class="project-item">
+        <h2>Sales Dashboard</h2>
+        <p>Interactive Tableau dashboard showcasing retail sales KPIs and trends.</p>
+      </div>
+      <div class="project-item">
+        <h2>Churn Prediction</h2>
+        <p>Python-based machine learning model predicting telecom customer churn with 85% accuracy.</p>
+      </div>
+      <div class="project-item">
+        <h2>Healthcare Claims Analysis</h2>
+        <p>SQL data analysis identifying fraud and anomalies in healthcare claims data.</p>
+      </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Nandha Shriram Sabbina. All Rights Reserved.</p>
   </footer>
 
+  <!-- Scripts -->
   <script src="assets/js/script.js"></script>
+
 </body>
 </html>
