@@ -340,6 +340,163 @@ footer {
   padding: 10px; /* ✅ gives nice breathing space inside the circle */
 }
 
+/* Animate the New Badge */
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.badge-new {
+  background-color: #64ffda;
+  color: #0a192f;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-left: 10px;
+  font-weight: bold;
+  vertical-align: middle;
+  animation: popIn 1s ease forwards;
+}
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-link:hover {
+  color: #64ffda;
+}
+/* Special Project Card with Image */
+.project-with-image {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  color: #0a192f;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-with-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Image */
+.project-image {
+  width: 180px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Project Text */
+.project-text {
+  flex: 1;
+}
+
+/* Optional: Make KnowFlow badge pop */
+.badge-new {
+  background-color: #64ffda;
+  color: #0a192f;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-left: 10px;
+  font-weight: bold;
+  vertical-align: middle;
+  animation: popIn 1s ease forwards;
+}
+
+/* Project Title Link Style */
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-link:hover {
+  color: #64ffda;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.project-info {
+  flex: 1;
+  padding: 40px;
+  text-align: left;
+}
+
+.project-info h2 {
+  font-size: 2rem;
+  color: #0a192f;
+  margin-bottom: 20px;
+}
+
+.project-icons {
+  margin-bottom: 20px;
+}
+
+.project-icons img {
+  width: 35px;
+  margin-right: 10px;
+}
+
+.project-info p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.project-button {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 2px solid #0a192f;
+  border-radius: 30px;
+  color: #0a192f;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.project-button:hover {
+  background: #0a192f;
+  color: #ffffff;
+}
+
+/* Project Image */
+.project-image {
+  flex: 1;
+  height: 100%;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .about p {
   max-width: 800px;
